@@ -33,6 +33,9 @@
 .bg-mp-grey {
   background-color: var(--multipass-grey);
 }
+.fill-mp-grey {
+  fill: var(--multipass-grey);
+}
 
 .bg-dakta {
   background-color: var(--daktadeo-dark);
