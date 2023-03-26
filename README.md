@@ -32,7 +32,7 @@ To work on this theme in the context of the `vuejs.org` website requires cloning
    ```bash
    # In ./theme
    pnpm install
-   # Make @vue/theme available for global linking
+   # Make @daktadeo/theme available for global linking
    pnpm link --global
 
    # in ./docs
