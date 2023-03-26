@@ -1,6 +1,6 @@
 {
   "name": "@daktadeo/theme",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "A Theme forked from vuejs.org for the Multipass.rocks website & project docs.",
   "main": "src/index.ts",
   "exports": {
