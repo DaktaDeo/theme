@@ -24,7 +24,7 @@ To work on this theme in the context of the `vuejs.org` website requires cloning
 
    ```bash
    git clone git@github.com:daktadeo/multipass-docs.git
-   git clone git@github.com:daktadeo/multipass.git
+   git clone git@github.com:daktadeo/theme.git
    ```
 
 2. Link theme into docs repo:
@@ -38,7 +38,7 @@ To work on this theme in the context of the `vuejs.org` website requires cloning
    # in ./docs
    pnpm install
    # Link theme
-   pnpm link --global @vue/multipass
+   pnpm link --global @daktadeo/theme
    ```
 
 3. Start VitePress server:
