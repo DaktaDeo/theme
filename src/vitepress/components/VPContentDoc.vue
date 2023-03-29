@@ -13,7 +13,7 @@ const { config } = useConfig()
 const hashMatch = /#(\w+)$/
 
 const repoUrl = computed(() => {
-  const repo = config.value.editLink?.repo || 'vuejs/docs'
+  const repo = config.value.editLink?.repo || ''
   const branch = repo.match(hashMatch)?.[1] || 'main'
   return `https://github.com/${repo.split('#')[0]}/edit/${branch}/src/${
     page.value.relativePath

@@ -3,6 +3,7 @@ import { useData } from 'vitepress'
 import { useSidebar } from '../composables/sidebar'
 import VPContentPage from './VPContentPage.vue'
 import VPContentDoc from './VPContentDoc.vue'
+import VPContentBlog from './VPContentBlog.vue'
 import VPNotFound from './VPNotFound.vue'
 
 const { page, frontmatter } = useData()
@@ -20,6 +21,10 @@ const { hasSidebar } = useSidebar()
       <template #footer-before><slot name="footer-before" /></template>
       <template #footer-after><slot name="footer-after" /></template>
     </VPContentPage>
+    <VPContentBlog v-else-if="!!frontmatter.blog" :class="{ 'has-sidebar': hasSidebar }">
+      <template #content-top><slot name="content-top" /></template>
+      <template #content-bottom><slot name="content-bottom" /></template>
+    </VPContentBlog>
     <VPContentDoc v-else :class="{ 'has-sidebar': hasSidebar }">
       <template #content-top><slot name="content-top" /></template>
       <template #content-bottom><slot name="content-bottom" /></template>
